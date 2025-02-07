@@ -2,8 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html,body{
+    /* overflow-y:  hidden; */
+}
 .bg-img{
-    background-image: url('../src//assets/HeroSection/hero_bg.jpeg');
+    /* height: auto; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-image: url('../src//assets/HeroSection/hero_bg.jpeg'); */
 }
 .text_lets {
     font-family: "Satisfy", cursive;
@@ -11,19 +18,54 @@
 .travel_top_text{
     font-family: "Playfair Display", serif;
 }
+.lorem{
+    font-family: sans-serif;
+}
   
 
-
+.bg-form{
+    backdrop-filter: blur(17.7606px);
+    max-width: 1093px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 28px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.15);
+}
 
 
 
 .full-landing-image{
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     z-index: 40;
     width: 100%;
     height: 100vh;
-    background: url('../src/assets/HeroSection/hero_bg.jpeg') no-repeat center;
-    background-size: cover;
+    background: url('../src/assets/HeroSection/hero_bg.jpeg') center;
+    /* background-size: cover; */
+    overflow-x: hidden;
+}
+
+
+.popup_box_1{
+    opacity: 0.45;
+    bottom: -270px;
+    right: -140px;
+    width: 498px;
+    height: 580px;
+    border-radius: 50%;
+    background-color: skyblue;
+    position: absolute;
+}
+
+.popup_box_2{
+    opacity: 0.7;
+    bottom: -428px;
+    right: -10px;
+    width: 498px;
+    height: 576px;
+    border-radius: 50%;
+    background-color: skyblue;
+    position: absolute;
 }

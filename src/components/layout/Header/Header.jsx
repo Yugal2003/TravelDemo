@@ -7,11 +7,11 @@ import { BiSolidUpArrow } from "react-icons/bi";
 const Header = () => {
   return (
     <div className='w-full flex'>
-        <div className='w-full z-[100] fixed'>
+        <div className='w-full z-50 fixed'>
             <div className='border-b border-sky-100 w-full flex justify-between items-center'>
 
                 {/* 1200 up */}
-                <div className='sticky hidden bm:flex w-[100%] justify-between mx-auto items-center h-[100px] px-[15px]'>
+                <div className='hidden bm:flex w-[100%] justify-between mx-auto items-center h-[100px] px-[15px]'>
                     <div className='px-[15px]'>
                           <p className='cursor-pointer'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="283" height="55" viewBox="0 0 283 55" fill="none">

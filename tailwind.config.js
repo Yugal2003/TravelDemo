@@ -5,6 +5,7 @@
     extend: {
       screens: {
         'bw' : '575px',
+        'md' : '768px',
         'bs' : '990px',
         'bm': '1200px',
         'xl': '1300px',
