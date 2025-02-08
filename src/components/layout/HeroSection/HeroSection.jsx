@@ -4,14 +4,14 @@ import { FaSearch } from "react-icons/fa";
 const HeroSection = () => {
     
   return (
-    <div className='w-full mt-24'>
+    <div className='w-full mt-24 herosection_container'>
         <div className=''> {/* max-w */}
             <div className='w-full justify-center items-center mx-auto'>
 
-                <div className='absolute z-40 bs:w-[76.5%] top-[-5rem] mt-[-6.4rem] 2xl:w-[77.8%] flex justify-center items-center'>
+                {/* <div className='absolute z-40 bs:w-[76.5%] top-[-5rem] mt-[-6.4rem] 2xl:w-[77.8%] flex justify-center items-center'>
                     <div className='opacity-80 h-[47.8rem] bg-[#238da2] bs:w-[35.6%] 2xl:w-[42.4%] mx-auto'>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <div className='w-full flex flex-col gap-8 justify-center pt-[8.5rem] items-center mx-auto'>
@@ -56,7 +56,7 @@ const HeroSection = () => {
                                 <option>7 Days Tour</option>
                             </select>
                         </div>
-                        <div className='bg-sky-400 rounded-r-md text-[#102039] duration-100 cursor-pointer hover:text-white hover:bg-[#102039] justify-center gap-[15px] flex items-center w-[22%] h-[75px]'>
+                        <div className='bg-[#3fd0d4] rounded-r-md text-[#102039] duration-100 cursor-pointer hover:text-white hover:bg-[#102039] justify-center gap-[15px] flex items-center w-[22%] h-[75px]'>
                             <FaSearch className='' size={20}/>
                             <h1 className='text-[16px]  travel_top_text font-semibold'>Find Now</h1>
                         </div>
@@ -64,8 +64,8 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            {/* <div className='popup_box_1'></div>
-            <div className='popup_box_2'></div> */}
+            <div className='popup_box_1'></div>
+            <div className='popup_box_2'></div>
 
         </div>
     </div>

@@ -3,14 +3,20 @@
 @tailwind utilities;
 
 
-html,body{
-    /* overflow-y:  hidden; */
+body{
+    overflow-y:  hidden;
 }
 .bg-img{
     /* height: auto; */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
     /* background-image: url('../src//assets/HeroSection/hero_bg.jpeg'); */
+}
+.bg-image{
+    background-image: url('../src/assets/CTA/feature_bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .text_lets {
     font-family: "Satisfy", cursive;
@@ -48,14 +54,21 @@ html,body{
 }
 
 
+.herosection_container{
+    min-height: 785px;
+    position: relative;
+    /* border: 1px solid red; */
+    clip-path: inset(0 0 0 0); 
+}
+
 .popup_box_1{
     opacity: 0.45;
     bottom: -270px;
     right: -140px;
     width: 498px;
-    height: 580px;
+    height: 565px;
     border-radius: 50%;
-    background-color: skyblue;
+    background-color:rgb(63 208 212);
     position: absolute;
 }
 
@@ -63,9 +76,9 @@ html,body{
     opacity: 0.7;
     bottom: -428px;
     right: -10px;
-    width: 498px;
-    height: 576px;
+    width: 510px;
+    height: 558px;
     border-radius: 50%;
-    background-color: skyblue;
+    background-color: rgb(63 208 212);
     position: absolute;
 }

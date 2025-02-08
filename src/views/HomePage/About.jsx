@@ -5,14 +5,14 @@ import { BsArrowRight } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className='mt-[450px]'>
+    <div className='pt-[140px]'>
         <div>
           <div className='w-full flex flex-col bs:flex-row justify-center items-center mx-auto'>
 
                 {/* above 992px */}
-                <div className='flex flex-col bs:flex-row w-full items-center justify-center max-w-full px-4 bw:px-0 bw:max-w-[540px] md:max-w-[720px] bs:max-w-[960px] bm:max-w-[1140px] 2xl:max-w-[1320px]'>
+                <div className='flex flex-col bs:flex-row w-full items-center justify-center px-4 bw:px-0 max-w-full  bw:max-w-[540px] md:max-w-[720px] bs:max-w-[960px] bm:max-w-[1140px] 2xl:max-w-[1320px]'>
                     {/* img */}
-                    <div className='bs:w-[41.33%] px-[0.6rem] border border-black'>
+                    <div className='bs:w-[41.33%] px-[0.6rem]'>
                         <img src={img_logo} alt='img_logo' className='object-cover'/>
                     </div>
 
@@ -66,10 +66,10 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* below 992px */}
-                <div>
+          </div>
 
-                </div>
+          <div className='h-[140px] w-full'>
+
           </div>
         </div>
     </div>
