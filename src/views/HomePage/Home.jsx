@@ -7,7 +7,7 @@ import CTA from './CTA'
 
 const Home = () => {
   return (
-    <div className='flex flex-col full-landing-image min-h-[880px]'>
+    <div className='flex flex-col full-landing-image min-h-[885px]'>
         <Header/>
         <HeroSection/>
         <About/>

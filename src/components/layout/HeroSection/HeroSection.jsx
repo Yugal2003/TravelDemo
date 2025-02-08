@@ -6,64 +6,63 @@ const HeroSection = () => {
   return (
     <div className='w-full mt-24 herosection_container'>
         <div className=''> {/* max-w */}
-            <div className='w-full justify-center items-center mx-auto'>
+            <div className='w-full justify-center items-center mx-auto max-w-full  bw:max-w-[540px] md:max-w-[720px] bs:max-w-[960px] bm:max-w-[1140px] 2xl:max-w-[1320px]'>
 
-                {/* <div className='absolute z-40 bs:w-[76.5%] top-[-5rem] mt-[-6.4rem] 2xl:w-[77.8%] flex justify-center items-center'>
-                    <div className='opacity-80 h-[47.8rem] bg-[#238da2] bs:w-[35.6%] 2xl:w-[42.4%] mx-auto'>
+                
+
+                {/* lets Travel Top  */}
+                <div className='w-full flex flex-col gap-8 justify-center pt-[8.5rem] items-center mx-auto'>
+
+                    {/* lets  */}
+                    <div className='text-white z-50  flex justify-center items-center mx-auto w-full'>
+                        <h1 style={{letterSpacing:"7.5px"}} className='uppercase text_lets text-[1.375rem] bs:text-[1.5rem]  2xl:text-[1.5625rem]'>Lets Travel The World With Us</h1>
                     </div>
-                </div> */}
-            </div>
 
-            <div className='w-full flex flex-col gap-8 justify-center pt-[8.5rem] items-center mx-auto'>
-
-                {/* lets */}
-                <div className='text-white z-50  flex justify-center items-center mx-auto w-full'>
-                    <h1 style={{letterSpacing:"7.5px"}} className='uppercase text_lets text-[1.375rem] bs:text-[1.5rem]  2xl:text-[1.5625rem]'>Lets Travel The World With Us</h1>
-                </div>
-
-                {/* Travel Top */}
-                <div className='text-white flex-col z-50  flex justify-center items-center mx-auto w-full'>
-                    <div style={{letterSpacing:"2px"}} className='travel_top_text font-bold text-[100px] bw:text-6xl bs:text-[5rem] 2xl:text-[6.5rem]'>Travel Top Destination</div>
-                    <div style={{letterSpacing:"2px"}} className='mt-8 travel_top_text font-bold text-[100px] bw:text-6xl bs:text-[5rem] 2xl:text-[6.5rem]'>of The World</div>
-                </div>
-            </div>
-
-            <div className='w-full justify-center mt-[5.2rem] items-center mx-auto absolute z-30'>
-                <div className='bg-form p-8 w-[72%] h-auto mx-auto'>
-                    <div className='bg-white flex flex-row w-full rounded-md'>
-                        <div className='flex items-center px-[20px] w-[26%] border-r border-r-gray-300'>
-                            <input type='text' className='placeholder:text-gray-400 focus:outline-none font-medium' placeholder='Where to?'/>
-                        </div>
-                        <div className='flex items-center px-[20px] w-[26%] border-r border-r-gray-300'>
-                            <select className='w-full focus:outline-none'>
-                                <option className='font-bold'>Destination</option>
-                                <option>Africa Portugal Mexico</option>
-                                <option>Machu Pichhu, Peru</option>
-                                <option>New York City, USA</option>
-                                <option>Paris, France</option>
-                                <option>Rome, Italy</option>
-                                <option>Santorini, Greece</option>
-                            </select>
-                        </div>
-                        <div className='flex items-center px-[20px] w-[26%] border-r border-r-gray-300'>
-                            <select className='w-full focus:outline-none'>
-                                <option className='font-bold'>Duration</option>
-                                <option>2 Days Tour</option>
-                                <option>3 Days Tour</option>
-                                <option>4 Days Tour</option>
-                                <option>5 Days Tour</option>
-                                <option>6 Days Tour</option>
-                                <option>7 Days Tour</option>
-                            </select>
-                        </div>
-                        <div className='bg-[#3fd0d4] rounded-r-md text-[#102039] duration-100 cursor-pointer hover:text-white hover:bg-[#102039] justify-center gap-[15px] flex items-center w-[22%] h-[75px]'>
-                            <FaSearch className='' size={20}/>
-                            <h1 className='text-[16px]  travel_top_text font-semibold'>Find Now</h1>
-                        </div>
+                    {/* Travel Top */}
+                    <div className='text-white z-50  flex text-center justify-center items-center mx-auto w-full px-[75px]'>
+                        <div style={{letterSpacing:"2px"}} className='flex gap-6 flex-col travel_top_text font-bold text-[100px] bw:text-6xl bs:text-[5rem] 2xl:text-[6.5rem]'><span>Travel Top Destination</span><span>of The World</span></div>
+                        {/* <div style={{letterSpacing:"2px"}} className='mt-8 travel_top_text font-bold text-[100px] bw:text-6xl bs:text-[5rem] 2xl:text-[6.5rem]'></div> */}
                     </div>
                 </div>
-            </div>
-
+                </div>
+                {/* input + select */}
+                <div className='w-full justify-center mt-[5.6rem] items-center mx-auto absolute z-30'>
+                    <div className='bg-form p-8 w-full justify-center items-center h-auto mx-auto'>
+                        <div className='bg-white flex flex-row w-full justify-center items-center rounded-md mx-auto'>
+                            <div className='flex items-center px-[20px] w-[26%] border-r border-r-gray-300'>
+                                <input type='text' className='placeholder:text-gray-400 focus:outline-none font-medium' placeholder='Where to?'/>
+                            </div>
+                            <div className='flex items-center px-[20px] w-[26%] border-r border-r-gray-300'>
+                                <select className='w-full focus:outline-none'>
+                                    <option className='font-bold'>Destination</option>
+                                    <option>Africa Portugal Mexico</option>
+                                    <option>Machu Pichhu, Peru</option>
+                                    <option>New York City, USA</option>
+                                    <option>Paris, France</option>
+                                    <option>Rome, Italy</option>
+                                    <option>Santorini, Greece</option>
+                                </select>
+                            </div>
+                            <div className='flex items-center px-[20px] w-[26%] border-r border-r-gray-300'>
+                                <select className='w-full focus:outline-none'>
+                                    <option className='font-bold'>Duration</option>
+                                    <option>2 Days Tour</option>
+                                    <option>3 Days Tour</option>
+                                    <option>4 Days Tour</option>
+                                    <option>5 Days Tour</option>
+                                    <option>6 Days Tour</option>
+                                    <option>7 Days Tour</option>
+                                </select>
+                            </div>
+                            <div className='bg-[#3fd0d4] rounded-r-md text-[#102039] duration-100 cursor-pointer hover:text-white hover:bg-[#102039] justify-center gap-[15px] flex items-center w-[22%] h-[75px]'>
+                                <FaSearch className='' size={20}/>
+                                <h1 className='text-[16px]  travel_top_text font-semibold'>Find Now</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+            
             <div className='popup_box_1'></div>
             <div className='popup_box_2'></div>
 
