@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaSearch } from "react-icons/fa";
+import { motion } from 'framer-motion'  
 
 const HeroSection = () => {
     
@@ -19,9 +20,17 @@ const HeroSection = () => {
                     </div>
 
                     {/* Travel Top */}
+                    {/* <div style={{letterSpacing:"2px"}} className='mt-8 travel_top_text font-bold text-[100px] bw:text-6xl bs:text-[5rem] 2xl:text-[6.5rem]'></div> */}
+
                     <div className='text-white z-50  flex text-center justify-center items-center mx-auto w-full px-[75px]'>
-                        <div style={{letterSpacing:"2px"}} className='flex gap-6 flex-col travel_top_text font-bold text-[100px] bw:text-6xl bs:text-[5rem] 2xl:text-[6.5rem]'><span>Travel Top Destination</span><span>of The World</span></div>
-                        {/* <div style={{letterSpacing:"2px"}} className='mt-8 travel_top_text font-bold text-[100px] bw:text-6xl bs:text-[5rem] 2xl:text-[6.5rem]'></div> */}
+                        <motion.div 
+                            initial={{ y: "20%", opacity: 0 }} // Start off-screen to the right
+                            whileInView={{ y: 0, opacity: 1 }}  // Move to original position
+                            transition={{ duration: 0.7, ease: "easeOut" }} // Smooth animation
+                            viewport={{ once: true }} // Ensures animation happens only once
+                        >
+                            <div className='flex leading-[1.33em] gap-8 flex-col travel_top_text font-bold text-[100px] bw:text-6xl bs:text-[5rem] 2xl:text-[6.25rem]'><span>Travel Top Destination</span><span>of The World</span></div>
+                        </motion.div>
                     </div>
                 </div>
                 </div>

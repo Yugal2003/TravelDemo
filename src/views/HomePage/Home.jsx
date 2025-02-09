@@ -4,6 +4,7 @@ import HeroSection from '../../components/layout/HeroSection/HeroSection'
 import Footer from '../../components/layout/Footer/Footer'
 import About from './About'
 import CTA from './CTA'
+import PopularTours from './PopularTours'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <HeroSection/>
         <About/>
         <CTA/>
+        <PopularTours/>
         <Footer/>        
     </div>
   )
