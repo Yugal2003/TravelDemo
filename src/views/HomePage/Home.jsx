@@ -5,6 +5,9 @@ import Footer from '../../components/layout/Footer/Footer'
 import About from './About'
 import CTA from './CTA'
 import PopularTours from './PopularTours'
+import GuideSection from './GuideSection'
+import PopularDestination from './PopularDestination'
+import ExperienceSection from './ExperienceSection'
 
 const Home = () => {
   return (
@@ -14,6 +17,9 @@ const Home = () => {
         <About/>
         <CTA/>
         <PopularTours/>
+        <GuideSection/>
+        <PopularDestination/>
+        <ExperienceSection/>
         <Footer/>        
     </div>
   )
