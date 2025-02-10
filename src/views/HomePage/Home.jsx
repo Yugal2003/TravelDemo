@@ -8,6 +8,10 @@ import PopularTours from './PopularTours'
 import GuideSection from './GuideSection'
 import PopularDestination from './PopularDestination'
 import ExperienceSection from './ExperienceSection'
+import GettingStart from './GettingStart'
+import VideoSection from './VideoSection'
+import BrandLogo from './BrandLogo'
+import NewsAndBlog from './NewsAndBlog'
 
 const Home = () => {
   return (
@@ -20,6 +24,10 @@ const Home = () => {
         <GuideSection/>
         <PopularDestination/>
         <ExperienceSection/>
+        <GettingStart/>
+        <VideoSection/>
+        <BrandLogo/>
+        <NewsAndBlog/>
         <Footer/>        
     </div>
   )

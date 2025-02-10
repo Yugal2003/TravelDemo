@@ -26,7 +26,7 @@ const PopularDestination = () => {
                         >
                         <h2 className='text-[#102039] travel_top_text text-[38px] bs:text-[44px] 2xl:text-[56px] font-semibold flex justify-center items-center text-center'>Popular Destinations</h2>
 
-                            </motion.div>
+                        </motion.div>
                     </div>
                     <div className='w-full h-[40px] bs:h-[55px]'></div>
                     <div className='w-full grid grid-cols-1 md:grid-cols-2 bs:grid-cols-3 gap-[24px]'>

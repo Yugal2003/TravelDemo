@@ -18,7 +18,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
 }
-.text_lets {
+.text_lets{
     font-family: "Satisfy", cursive;
 }
 .travel_top_text{
@@ -31,6 +31,9 @@ body{
     font-family: sans-serif;
 }
   
+.custom-clip-path{
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 18% 50%, 0% 0%);
+}
 
 .bg-form{
     backdrop-filter: blur(17.7606px);
@@ -91,6 +94,80 @@ body{
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 } */
+
+.bg-video{
+    background-image: url('../src/assets/VideoSection/video_block.jpeg');
+}
+.arrow-before::before {
+    content: "";
+    position: absolute;
+    width: 112px;
+    height: 110px;
+    background-image: url('../src/assets/GettingStarted/arrow.png'); /* Make sure the path is correct */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: -102px;
+    top: 100px;
+  }
+
+.svg-before::before{
+    content: "";
+    width: 150px;
+    height: 150px;
+    opacity: 0.45;
+    background-color: white;
+    z-index: 0;
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: white;
+}
+
+.svg-after::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #3fd0d4;
+    z-index: 1;
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    box-sizing: border-box;
+    color: white;
+}
+
+.i-before::before{
+    box-sizing: border-box;
+    content: "\f3c5";
+    font-weight:900;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    color: white;
+    font-size: 20px;
+    
+}
+
+
+
+.atag:hover {
+    transform: rotate(40deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.atag:hover svg {
+    transform: rotate(40deg);
+    transition: all 0.3s ease-in-out;
+}
 
 /* .bg-img-1{
     background-image: url('../src/assets/PopularTours/package_img_1.jpeg');

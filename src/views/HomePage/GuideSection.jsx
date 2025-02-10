@@ -37,7 +37,7 @@ const GuideSection = () => {
                         </div>
                         
                         <div className='w-[100%] bw:w-[50%] px-0 bw:px-[0.8rem] max-w-[100%]'>
-                            <div style={{border:"1px solid rgb(63,208,212"}} className='rounded-[6px] pt-[24px] pb-[33px] text-center'>
+                            <div style={{border:"1px solid rgb(63,208,212)"}} className='rounded-[6px] pt-[24px] pb-[33px] text-center'>
                               <h3 className='flex justify-center mb-[10px] text-[#3fd0d4] font-semibold text-[40px] leading-[1.45em]'>
                                 <span className='travel_top_text'>{inView ? <CountUp start={0} end={502} duration={1} /> : "0"}</span>
                                 <span className='text-[#3fd0d4] font-light'>+</span>
@@ -47,7 +47,7 @@ const GuideSection = () => {
                         </div>
 
                         <div className='w-[100%] bw:w-[50%] px-0 bw:px-[0.8rem] max-w-[100%]'>
-                            <div style={{border:"1px solid rgb(63,208,212"}} className='rounded-[6px] pt-[24px] pb-[33px] text-center'>
+                            <div style={{border:"1px solid rgb(63,208,212)"}} className='rounded-[6px] pt-[24px] pb-[33px] text-center'>
                               <h3 className='flex justify-center mb-[10px] text-[#3fd0d4] font-semibold text-[40px] leading-[1.45em]'>
                                 <span className='travel_top_text'>{inView ? <CountUp start={0} end={100} duration={1} /> : "0"}</span>
                                 <span className='text-[#3fd0d4] font-light'>+</span>
@@ -57,7 +57,7 @@ const GuideSection = () => {
                         </div>
 
                         <div className='w-[100%] bw:w-[50%] px-0 bw:px-[0.8rem] max-w-[100%]'>
-                            <div style={{border:"1px solid rgb(63,208,212"}} className='rounded-[6px] pt-[24px] pb-[33px] text-center'>
+                            <div style={{border:"1px solid rgb(63,208,212)"}} className='rounded-[6px] pt-[24px] pb-[33px] text-center'>
                               <h3 className='flex justify-center mb-[10px] text-[#3fd0d4] font-semibold text-[40px] leading-[1.45em]'>
                                 <span className='travel_top_text'>{inView ? <CountUp start={0} end={77} duration={1} /> : "0"}</span>
                                 <span className='text-[#3fd0d4] font-light'>+</span>
@@ -67,7 +67,7 @@ const GuideSection = () => {
                         </div>
 
                         <div className='w-[100%] bw:w-[50%] px-0 bw:px-[0.8rem] max-w-[100%]'>
-                            <div style={{border:"1px solid rgb(63,208,212"}} className='rounded-[6px] pt-[24px] pb-[33px] text-center'>
+                            <div style={{border:"1px solid rgb(63,208,212)"}} className='rounded-[6px] pt-[24px] pb-[33px] text-center'>
                               <h3 className='flex justify-center mb-[10px] text-[#3fd0d4] font-semibold text-[40px] leading-[1.45em]'>
                                 <span className='travel_top_text'>{inView ? <CountUp start={0} end={2} duration={1} /> : "0"}</span>
                                 <span className='text-[#3fd0d4] font-light'>+</span>

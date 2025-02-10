@@ -6,7 +6,7 @@ import { BiSolidUpArrow } from "react-icons/bi";
 
 const Header = () => {
   return (
-    <div className='w-full flex'>
+    <div className='w-full flex max-w-auto  bw:max-w-[540px] md:max-w-[720px] bs:max-w-[960px] bm:max-w-[1140px] 2xl:max-w-[1320px]'>
                     <div className='absolute z-0 bs:w-[76.5%] top-[-5rem] mt-[-6.4rem] 2xl:w-[78.2%] flex justify-center items-center'>
                         <div className='opacity-80 h-[47.8rem] bg-[#238da2] bs:w-[35.6%] 2xl:w-[42.5%] mx-auto'>
                         </div>
@@ -204,3 +204,39 @@ const Header = () => {
 }
 
 export default Header;
+
+
+
+// import React from 'react'
+
+// const Header = () => {
+//   return (
+//     <div style={{borderBottom: "1px solid rgba(255, 255, 255, 0.25)",zIndex:"999",transition: "all 0.4s ease"}} className='fixed w-[100%] left-0 top-0 text-[18px] leading-[1.667em]'>
+//         <div className='bm:relative text-[18px] leading-[1.667em]'>
+//             <div className='h-[100px] flex flex-wrap items-center justify-between relative text-[18px] leading-[1.667em]'>
+//                 {/* first */}
+//                 <div className='bm:h-[100%] bm:flex bm:justify-center bm:items-center bm:px-[30px] bm:border bm:border-r-white text-[18px] leading-[1.667em]'>
+//                     <a className='relative inline-block max-w-[220px] bm:max-w-auto text-[18px] leading-[1.667em] cursor-pointer' style={{zIndex:"101",transition: "all 0.3s ease",textDecoration:"none"}}>
+//                         <img src="https://travelpro-wp.laralink.com/wp-content/themes/travelpro/assets/img/logo.svg" alt='logo' style={{verticalAlign:"middle"}}  className='h-auto border-0 max-w-[100%] text-[18px] leading-[1.667em]'/>
+//                     </a>
+//                 </div>
+
+//                 {/* second */}
+//                 <div className='xl:max-w-[calc(100%-650px)] bm:flex bm:justify-center bm:items-center bm:h-[100%] bm:w-[100%] bm:absolute bm:left-[50%] bm:top-[50%] bm:transform text-[18px] leading-[1.667em]' style={{transform: "translate(-50%, -50%)"}}>
+//                     <div className='bm:flex bm:items-center bm:h-[100%] bm:leading-[1.6em] bm:font-medium travel_top_text text-[18px]'>
+//                         <ul className='bm:flex bm:flex-wrap m-0 p-0 font-medium travel_top_text text-[18px]'>
+//                             <li className='bm:relative bm:mr-[40px] font-medium text-[18px] travel_top_text'>
+//                                 <a className='bm:relative bm:py-[10px] bm:inline-flex items-center text-white cursor-pointer font-medium travel_top_text text-[18px]' style={{transition: "all 0.3s ease"}}>
+//                                     Home
+//                                 </a>
+//                             </li>
+//                         </ul>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+//   )
+// }
+
+// export default Header;
