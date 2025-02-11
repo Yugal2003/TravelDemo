@@ -6,8 +6,9 @@ import { BsArrowRight } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className='pt-[140px]'>
+    <div className=''>
         <div>
+          <div className='h-[80px] bs:h-[140px] w-full'></div>
           <div className='w-full flex flex-col bs:flex-row justify-center items-center mx-auto'>
 
                 <div className='flex gap-[40px] bs:gap-0 flex-col bs:flex-row w-full items-center justify-center max-w-full  bw:max-w-[540px] md:max-w-[720px] bs:max-w-[960px] bm:max-w-[1140px] 2xl:max-w-[1320px]'>
@@ -85,9 +86,8 @@ const About = () => {
 
           </div>
 
-          <div className='h-[80px] bs:h-[140px] w-full'>
+          <div className='h-[80px] bs:h-[140px] w-full'></div>
 
-          </div>
         </div>
     </div>
   )

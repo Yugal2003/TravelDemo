@@ -7,10 +7,6 @@ import { BiSolidUpArrow } from "react-icons/bi";
 const Header = () => {
   return (
     <div className='w-full flex max-w-auto  bw:max-w-[540px] md:max-w-[720px] bs:max-w-[960px] bm:max-w-[1140px] 2xl:max-w-[1320px]'>
-                    <div className='absolute z-0 bs:w-[76.5%] top-[-5rem] mt-[-6.4rem] 2xl:w-[78.2%] flex justify-center items-center'>
-                        <div className='opacity-80 h-[47.8rem] bg-[#238da2] bs:w-[35.6%] 2xl:w-[42.5%] mx-auto'>
-                        </div>
-                    </div>
         <div className='w-full z-50 fixed'>
             <div className='border-b border-sky-100 w-full flex justify-between items-center'>
 
@@ -208,29 +204,128 @@ export default Header;
 
 
 // import React from 'react'
+// import { FaSearch } from "react-icons/fa";
 
 // const Header = () => {
 //   return (
-//     <div style={{borderBottom: "1px solid rgba(255, 255, 255, 0.25)",zIndex:"999",transition: "all 0.4s ease"}} className='fixed w-[100%] left-0 top-0 text-[18px] leading-[1.667em]'>
+//     <div className='main_head top-0 py-0 px-[15px] left-0 text-[18px] leading-[1.667em]'>
 //         <div className='bm:relative text-[18px] leading-[1.667em]'>
-//             <div className='h-[100px] flex flex-wrap items-center justify-between relative text-[18px] leading-[1.667em]'>
+//             <div style={{WebkitBoxAlign:"center",WebkitBoxPack:"justify"}} className='h-[80px] bm:h-[100px] flex flex-wrap items-center justify-between relative text-[18px] leading-[1.667em]'>
 //                 {/* first */}
-//                 <div className='bm:h-[100%] bm:flex bm:justify-center bm:items-center bm:px-[30px] bm:border bm:border-r-white text-[18px] leading-[1.667em]'>
-//                     <a className='relative inline-block max-w-[220px] bm:max-w-auto text-[18px] leading-[1.667em] cursor-pointer' style={{zIndex:"101",transition: "all 0.3s ease",textDecoration:"none"}}>
+//                 <div className='bm:py-0 bm:px-[15px] xl:px-0 bm:max-w-[250px] bm:h-[100%] bm:flex bm:justify-center bm:items-center border-r border-r-white text-[18px] leading-[1.667em]'>
+//                     <a className='relative z-[101] max-w-[220px] inline-block text-[18px] leading-[1.667em]' style={{transition: "all 0.3s ease",textDecoration:"none"}}>
 //                         <img src="https://travelpro-wp.laralink.com/wp-content/themes/travelpro/assets/img/logo.svg" alt='logo' style={{verticalAlign:"middle"}}  className='h-auto border-0 max-w-[100%] text-[18px] leading-[1.667em]'/>
 //                     </a>
 //                 </div>
 
 //                 {/* second */}
-//                 <div className='xl:max-w-[calc(100%-650px)] bm:flex bm:justify-center bm:items-center bm:h-[100%] bm:w-[100%] bm:absolute bm:left-[50%] bm:top-[50%] bm:transform text-[18px] leading-[1.667em]' style={{transform: "translate(-50%, -50%)"}}>
+//                 <div className='xl:max-w-[calc(100%-650px)] bm:max-w-[calc(100%-510px)] bm:flex bm:justify-center bm:items-center bm:h-[100%] bm:w-[100%] bm:absolute bm:left-[50%] bm:top-[50%] bm:transform bm:translate-x-1/2 bm:translate-y-1/2 text-[18px] leading-[1.667em]'>
 //                     <div className='bm:flex bm:items-center bm:h-[100%] bm:leading-[1.6em] bm:font-medium travel_top_text text-[18px]'>
 //                         <ul className='bm:flex bm:flex-wrap m-0 p-0 font-medium travel_top_text text-[18px]'>
 //                             <li className='bm:relative bm:mr-[40px] font-medium text-[18px] travel_top_text'>
-//                                 <a className='bm:relative bm:py-[10px] bm:inline-flex items-center text-white cursor-pointer font-medium travel_top_text text-[18px]' style={{transition: "all 0.3s ease"}}>
+//                                 <a className='block py-[12px] px-[15px] bm:relative bm:py-[10px] bm:inline-flex bm:items-center bm:text-white cursor-pointer font-medium travel_top_text text-[18px]' style={{transition: "all 0.3s ease",textDecoration:"none"}}>
+//                                     {/* before */}
+//                                     <div className="bm:atag-before"></div>
 //                                     Home
+//                                     {/* after */}
+//                                     <div className="bm:atag-after"></div>
 //                                 </a>
+//                                 {/* <ul className='bm:left-0 bm:top-[calc(100%+15px)] bm:w-[260px] bm:bg-white bm:absolute bm:py-[10px] bm:z-[100] bm:opacity-0 bm:invisible bm:block bm:rounded-[5px] pl-[15px] hidden m-0 p-0' style={{transition: "all 0.1s ease"}}> */}
+//                                     {/* before */}
+//                                     {/* <div className="bm:ultag-before"></div>
+//                                     <li className=''></li>
+//                                 </ul> */}
+//                             </li>
+
+//                             <li className='bm:relative bm:mr-[40px] font-medium text-[18px] travel_top_text'>
+//                                 <a className='block py-[12px] px-[15px] bm:relative bm:py-[10px] bm:inline-flex bm:items-center bm:text-white cursor-pointer font-medium travel_top_text text-[18px]' style={{transition: "all 0.3s ease",textDecoration:"none"}}>
+//                                     {/* before */}
+//                                     <div className="bm:atag-before"></div>
+//                                     About Us
+//                                     {/* after */}
+//                                     <div className="bm:atag-after"></div>
+//                                 </a>
+//                                 {/* <ul className='bm:left-0 bm:top-[calc(100%+15px)] bm:w-[260px] bm:bg-white bm:absolute bm:py-[10px] bm:z-[100] bm:opacity-0 bm:invisible bm:block bm:rounded-[5px] pl-[15px] hidden m-0 p-0' style={{transition: "all 0.1s ease"}}> */}
+//                                     {/* before */}
+//                                     {/* <div className="bm:ultag-before"></div>
+//                                     <li className=''></li>
+//                                 </ul> */}
+//                             </li>
+
+//                             <li className='bm:relative bm:mr-[40px] font-medium text-[18px] travel_top_text'>
+//                                 <a className='block py-[12px] px-[15px] bm:relative bm:py-[10px] bm:inline-flex bm:items-center bm:text-white cursor-pointer font-medium travel_top_text text-[18px]' style={{transition: "all 0.3s ease",textDecoration:"none"}}>
+//                                     {/* before */}
+//                                     <div className="bm:atag-before"></div>
+//                                     Destination
+//                                     {/* after */}
+//                                     <div className="bm:atag-after"></div>
+//                                 </a>
+//                                 {/* <ul className='bm:left-0 bm:top-[calc(100%+15px)] bm:w-[260px] bm:bg-white bm:absolute bm:py-[10px] bm:z-[100] bm:opacity-0 bm:invisible bm:block bm:rounded-[5px] pl-[15px] hidden m-0 p-0' style={{transition: "all 0.1s ease"}}> */}
+//                                     {/* before */}
+//                                     {/* <div className="bm:ultag-before"></div>
+//                                     <li className=''></li>
+//                                 </ul> */}
+//                             </li>
+
+//                             <li className='bm:relative bm:mr-[40px] font-medium text-[18px] travel_top_text'>
+//                                 <a className='block py-[12px] px-[15px] bm:relative bm:py-[10px] bm:inline-flex bm:items-center bm:text-white cursor-pointer font-medium travel_top_text text-[18px]' style={{transition: "all 0.3s ease",textDecoration:"none"}}>
+//                                     {/* before */}
+//                                     <div className="bm:atag-before"></div>
+//                                     Tours
+//                                     {/* after */}
+//                                     <div className="bm:atag-after"></div>
+//                                 </a>
+//                                 {/* <ul className='bm:left-0 bm:top-[calc(100%+15px)] bm:w-[260px] bm:bg-white bm:absolute bm:py-[10px] bm:z-[100] bm:opacity-0 bm:invisible bm:block bm:rounded-[5px] pl-[15px] hidden m-0 p-0' style={{transition: "all 0.1s ease"}}> */}
+//                                     {/* before */}
+//                                     {/* <div className="bm:ultag-before"></div>
+//                                     <li className=''></li>
+//                                 </ul> */}
+//                             </li>
+
+//                             <li className='bm:relative bm:mr-[40px] font-medium text-[18px] travel_top_text'>
+//                                 <a className='block py-[12px] px-[15px] bm:relative bm:py-[10px] bm:inline-flex bm:items-center bm:text-white cursor-pointer font-medium travel_top_text text-[18px]' style={{transition: "all 0.3s ease",textDecoration:"none"}}>
+//                                     {/* before */}
+//                                     <div className="bm:atag-before"></div>
+//                                     Blog
+//                                     {/* after */}
+//                                     <div className="bm:atag-after"></div>
+//                                 </a>
+//                                 {/* <ul className='bm:left-0 bm:top-[calc(100%+15px)] bm:w-[260px] bm:bg-white bm:absolute bm:py-[10px] bm:z-[100] bm:opacity-0 bm:invisible bm:block bm:rounded-[5px] pl-[15px] hidden m-0 p-0' style={{transition: "all 0.1s ease"}}> */}
+//                                     {/* before */}
+//                                     {/* <div className="bm:ultag-before"></div>
+//                                     <li className=''></li>
+//                                 </ul> */}
+//                             </li>
+
+//                             <li className='bm:relative bm:mr-[40px] font-medium text-[18px] travel_top_text'>
+//                                 <a className='block py-[12px] px-[15px] bm:relative bm:py-[10px] bm:inline-flex bm:items-center bm:text-white cursor-pointer font-medium travel_top_text text-[18px]' style={{transition: "all 0.3s ease",textDecoration:"none"}}>
+//                                     {/* before */}
+//                                     <div className="bm:atag-before"></div>
+//                                     Contacts
+//                                     {/* after */}
+//                                     <div className="bm:atag-after"></div>
+//                                 </a>
+//                                 {/* <ul className='bm:left-0 bm:top-[calc(100%+15px)] bm:w-[260px] bm:bg-white bm:absolute bm:py-[10px] bm:z-[100] bm:opacity-0 bm:invisible bm:block bm:rounded-[5px] pl-[15px] hidden m-0 p-0' style={{transition: "all 0.1s ease"}}> */}
+//                                     {/* before */}
+//                                     {/* <div className="bm:ultag-before"></div>
+//                                     <li className=''></li>
+//                                 </ul> */}
 //                             </li>
 //                         </ul>
+//                     </div>
+//                 </div>
+
+//                 {/* third */}
+//                 <div className='flex items-center h-[100%] gap-[50px] text-white pr-[50px] bm:pr-0'>
+//                     <div className='flex h-[100%] border-r border-r-white'>
+//                         <div className='py-0 px-[15px] 2xl:px-[30px] border-l border-l-white flex items-center'>
+//                             <button className='cursor-pointer border-none outline-none bg-transparent text-[22px] 2xl:text-[24px] leading-[1.333em]' style={{transition: "all 0.3s ease"}}>
+//                                 <span className='font-black'>
+//                                     <FaSearch size={24}/>
+//                                 </span>
+//                             </button>
+//                         </div>
+//                         <div className='px-[15px] 2xl:px-[30px] border-l border-l-white flex items-center font-medium text-[20px] leading-[1.4em]'>+8 (123) 985 789</div>
 //                     </div>
 //                 </div>
 //             </div>

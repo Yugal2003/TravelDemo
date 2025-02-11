@@ -16,7 +16,7 @@ import HeightSection from './HeightSection'
 
 const Home = () => {
   return (
-    <div className='flex flex-col full-landing-image min-h-[885px]'>
+    <div className='flex flex-col full-landing-image min-h-[886px]'>
         <Header/>
         <HeroSection/>
         <About/>
@@ -27,10 +27,10 @@ const Home = () => {
         <ExperienceSection/>
         <GettingStart/>
         <VideoSection/>
-        <BrandLogo/>
-        <NewsAndBlog/>
-        <HeightSection/>
-        <Footer/>        
+        <BrandLogo/> {/* Done */}
+        <NewsAndBlog/> {/* Done */}
+        <HeightSection/> {/* Done */}
+        <Footer/> {/* Done */}
     </div>
   )
 }

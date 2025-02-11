@@ -3,7 +3,7 @@ import footer_img from '../../../assets/Footer/footer_bg.jpeg'
 import letter from '../../../assets/Footer/letter.png'
 const Footer = () => {
   return (
-    <div>
+    <div className='mb-[148px]'>
         <div> {/* max-w */}
           <div style={{backgroundImage:`url(${footer_img})`}} className='relative w-full bg-[#102039] text-white bg-cover bg-no-repeat bg-center mt-[200px] bs:mt-0'>
             {/* first div */}
@@ -24,7 +24,7 @@ const Footer = () => {
 
             {/* first conatiner */}
             <div className='w-[100%] mx-auto max-w-auto  bw:max-w-[540px] md:max-w-[720px] bs:max-w-[960px] bm:max-w-[1140px] 2xl:max-w-[1320px] px-[12px]'>
-              <div className='border border-red-600 flex flex-col bs:flex-row mt-[30px] bs:mt-0 gap-0 bs:gap-y-[40px] bs:gap-x-0 bs:pt-[100px] bs:pb-[60px] bs:ml-[-25px] bs:mr-[-25px] text-white'>
+              <div className='flex flex-col bs:flex-row mt-[30px] bs:mt-0 gap-0 bs:gap-y-[40px] bs:gap-x-0 bs:pt-[100px] bs:pb-[60px] bs:ml-[-25px] bs:mr-[-25px] text-white'>
                   {/* first */}
                   <div className='border-b border-gray-400 bs:border-r bs:border-b-0 bs:border-gray-400 flex-1 py-[35px] px-0 bs:py-[15px] bs:px-[25px] text-white'></div>
                   {/* second */}
@@ -133,7 +133,7 @@ const Footer = () => {
 
             {/* second conatiner */}
             <div className='w-[100%] mx-auto max-w-auto  bw:max-w-[540px] md:max-w-[720px] bs:max-w-[960px] bm:max-w-[1140px] 2xl:max-w-[1320px] px-[12px]'>
-              <div className='flex flex-col ms:flex-row justify-center text-center md:justify-between flex-wrap gap-y-[5px] gap-x-[30px] py-[24px] px-0 border-t border-t-gray-400'>
+              <div className='flex flex-col md:flex-row justify-center text-center md:justify-between flex-wrap gap-y-[5px] gap-x-[30px] py-[24px] px-0 border-t border-t-gray-400'>
                 <div className='text-white deliver'>Copyright © 2024 Travelpro . All rights reserved.</div>
                 <ul className='flex gap-y-[5px] gap-x-[25px] flex-wrap justify-center m-0 p-0' style={{listStyle:"none"}}>
                   <li>
