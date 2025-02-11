@@ -4,6 +4,7 @@
   theme: {
     extend: {
       screens: {
+        'sm' : '500px',
         'bw' : '575px',
         'md' : '768px',
         'bs' : '990px',

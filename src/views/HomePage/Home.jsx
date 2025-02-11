@@ -12,6 +12,7 @@ import GettingStart from './GettingStart'
 import VideoSection from './VideoSection'
 import BrandLogo from './BrandLogo'
 import NewsAndBlog from './NewsAndBlog'
+import HeightSection from './HeightSection'
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
         <VideoSection/>
         <BrandLogo/>
         <NewsAndBlog/>
+        <HeightSection/>
         <Footer/>        
     </div>
   )
