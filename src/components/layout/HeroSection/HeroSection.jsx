@@ -86,23 +86,29 @@
 import React from 'react'
 import { FaSearch } from "react-icons/fa";
 import backImg from '../../../assets/HeroSection/hero_bg.jpeg';
+import { motion } from 'framer-motion'  
 
 const HeroSection = () => {
   return (
-    <div className='border border-black pt-[490px] pb-[395px] px-0 relative overflow-hidden bg-fixed flex items-center justify-center z-0 full-landing' style={{WebkitBoxAlign:"center",WebkitBoxPack:"center",backgroundImage:`url(${backImg})`}}>
+    <div className='pt-[410px] bw:pt-[460px] md:pt-[368px] bs:pt-[465px] 2xl:pt-[490px] pb-[360px] 2xl:pb-[395px] px-0 relative overflow-hidden bg-fixed flex items-center justify-center z-0 full-landing' style={{WebkitBoxAlign:"center",WebkitBoxPack:"center",backgroundImage:`url(${backImg})`}}>
         <div className='relative z-[2] max-w-full  bw:max-w-[540px] md:max-w-[720px] bs:max-w-[960px] bm:max-w-[1140px] 2xl:max-w-[1320px] w-full px-[12px]'>
             <div className='text-center'>
-                <h3 className='tracking-[7.5px] mb-[12px] text-white text-[25px] leading-[1.44em] uppercase text_lets'>Lets Travel The World With Us</h3>
-                <h1 className='mb-[75px] text-white text-[100px] leading-[1.33em] travel_top_text font-bold' style={{visibility:"visible",animationDuration:"0.8s",animationDelay:"0.2s",animationName:"fadeInUp"}}>
-                Travel Top Destination <br/> of The World
-                </h1>
+                <h3 className='tracking-[4px] bs:tracking-[7.5px] mb-[12px] text-white text-[22px] bs:text-[24px] leading-[1.44em] uppercase text_lets'>Lets Travel The World With Us</h3>
+                <motion.div 
+                            initial={{ y: "20%", opacity: 0 }} // Start off-screen to the right
+                            whileInView={{ y: 0, opacity: 1 }}  // Move to original position
+                            transition={{ duration: 0.7, ease: "easeOut" }} // Smooth animation
+                            viewport={{ once: true }} // Ensures animation happens only once
+                        >
+                    <h1 className='mb-[40px] bs:mb-[75px] text-white text-[46px] bw:text-[56px] bs:text-[80px] 2xl:text-[100px] leading-[1.33em] travel_top_text font-bold' style={{visibility:"visible",animationDuration:"0.8s",animationDelay:"0.2s",animationName:"fadeInUp"}}><span className='block bs:hidden '>Travel Top Destination of The World</span> <span className='hidden bs:block'>Travel Top Destination <br/>of The World</span></h1>
+                </motion.div>
             </div>
-            <div className='bg-form'>
-                <form className='flex bg-white rounded-[5px]'>
-                    <div className='border-r border-r-white py-0 px-[20px] flex-1 flex items-center'>
+            <div className='bg-form mx-auto py-[15px] px-[15px] bs:py-[24px] bs:px-[28px]'>
+                <form className='flex flex-col md:flex-row bg-white rounded-[5px]'>
+                    <div className='md:border-r md:border-r-white py-0 px-[20px] md:flex-1 flex items-center h-[50px] md:h-auto flex-none'>
                         <input type='text' placeholder='Where to?' style={{border:"upset",outlineOffset:"-2px",transition: "all 0.4s ease"}}/>
                     </div>
-                    <div className='border-r border-r-white py-0 px-[20px] flex-1 flex items-center'>
+                    <div className='md:border-r md:border-r-white py-0 px-[20px] md:flex-1 flex items-center h-[50px] md:h-auto flex-none'>
                         <select className='w-[100%] outline-none'>
                             <option>Destination</option>
                             <option>Africa Portugal Mexico</option>
@@ -113,7 +119,7 @@ const HeroSection = () => {
                             <option>Santorini, Greece</option>
                         </select>
                     </div>
-                    <div className='border-r border-r-white py-0 px-[20px] flex-1 flex items-center'>
+                    <div className='md:border-r md:border-r-white py-0 px-[20px] md:flex-1 flex items-center h-[50px] md:h-auto flex-none'>
                         <select className='w-[100%] outline-none'>
                             <option>Duration</option>
                             <option>2 Days Tour</option>
@@ -125,17 +131,17 @@ const HeroSection = () => {
                         </select>
                     </div>
                     {/* <input type='text' placeholder=''/> */}
-                    <div className='flex-1 flex items-center'>
-                        <button className='border-none w-[100%] bg-[#3fd0d4] text-[#102039] h-[75px] gap-[15px] flex items-center justify-center' style={{fontWeight:"700",borderRadius:"0px 5px 5px 0px",transition: "all 0.3s ease",cursor:"pointer"}}>
+                    <div className='flex-1 flex items-center h-[50px] md:h-auto '>
+                        <button className='border-none w-[100%] bg-[#3fd0d4] text-[#102039] h-[50px] bs:h-[75px] gap-[10px] bs:gap-[15px] flex items-center justify-center' style={{fontWeight:"700",borderRadius:"0px 5px 5px 0px",transition: "all 0.3s ease",cursor:"pointer"}}>
                             <FaSearch size={20}/>Find Now
                         </button>
                     </div>
                 </form>
             </div>
         </div>
-        <div className='h-[580px] w-[501px] opacity-[0.55] top-0 left-[343px] bg-[#3fd0d4] absolute'></div>
-        <div className='opacity-[0.45] bottom-[-210px] right-[-140px] w-[498px] h-[510px] rounded-[50%] bg-[#3fd0d4] absolute'></div>
-        <div className='opacity-[0.7] right-[-10px] z-[1] bottom-[-370px] w-[498px] h-[510px] rounded-[50%] bg-[#3fd0d4] absolute'></div>
+        <div className='hidden bs:block h-[530px] 2xl:h-[580px] w-[380px] 2xl:w-[501px] opacity-[0.55] top-0 left-[343px] bg-[#3fd0d4] absolute'></div>
+        <div className='opacity-[0.45] bottom-[-210px] right-[-140px] border border-black h-[505px] rounded-[50%] bg-[#3fd0d4] absolute'></div>
+        <div className='opacity-[0.7] right-[-10px] z-[1] bottom-[-370px] h-[510px] rounded-[50%] bg-[#3fd0d4] absolute'></div>
     </div>
   )
 }
