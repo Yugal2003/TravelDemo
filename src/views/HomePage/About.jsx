@@ -29,11 +29,11 @@ const About = () => {
                             transition={{ duration: 1, ease: "easeOut" }} // Smooth animation
                             viewport={{ once: true }} // Ensures animation happens only once
                         >
-                            <h1  className='text-[#102039] w-[100%] bw:h-full leading-[3rem] 2xl:leading-[4.5rem] travel_top_text font-bold text-[38px] bs:text-[44px] 2xl:text-[56px]'>We are Professional Planners For your</h1>
+                            <h1  className='text-[#102039] w-[100%] bw:h-full leading-[3rem] 2xl:leading-[4.5rem] travel_top_text font-semibold text-[38px] bs:text-[44px] 2xl:text-[56px]'>We are Professional Planners For your</h1>
                             </motion.div>
                         </div>
 
-                        <div className='flex gap-6 mt-6 bs:mt-6 2xl:mt-4'>
+                        <div className='flex gap-5 mt-6 bs:mt-6 2xl:mt-7'>
                           <div>
                              <h1 className='w-[60px] h-[2px] bg-[#3fd0d4] mt-3'></h1>
                           </div>
@@ -42,12 +42,12 @@ const About = () => {
                           </div>
                         </div>
 
-                        <div className='flex gap-6 mt-6'>
+                        <div className='flex gap-5 mt-6'>
                           <div>
                              <h1 className='w-[60px]'></h1>
                           </div>
                           <div>
-                             <h1 className='text-[#3fd0d4] font-semibold deliver text-[18px]'>Speak to our Destination Experts at Direct Call +1 546 378 654</h1>
+                             <h1 className='text-[#3fd0d4] font-medium deliver text-[18px]'>Speak to our Destination Experts at Direct Call +1 546 378 654</h1>
                           </div>
                         </div>
 
@@ -55,25 +55,25 @@ const About = () => {
                           <h1 className='text-[#3fd0d4] lorem text-[18px]'>Speak to our Destination Experts at Direct Call +1 546 378 654</h1>
                         </div> */}
 
-                        <div className='flex flex-col gap-5 mt-9'>
+                        <div className='flex flex-col gap-4 mt-9'>
                           <div className='flex gap-2 items-center'>
                             <span className='rounded-full p-[5px] text-[18px]  bg-[#3fd0d4]'><MdDone size={14} color='white'/></span>
-                            <h1 className='text-[#666666] font-medium deliver'>All placges and activiates are carefully picked by us.</h1>
+                            <h1 className='text-[#666666] font-normal text-[18px] deliver'>All placges and activiates are carefully picked by us.</h1>
                           </div>
                           <div className='flex gap-2 items-center'>
                             <span className='rounded-full p-[5px] text-[18px]  bg-[#3fd0d4]'><MdDone size={14} color='white'/></span>
-                            <h1 className='text-[#666666] font-medium deliver'>98 Course Completitation Rates</h1>
+                            <h1 className='text-[#666666] font-normal text-[18px] deliver'>98 Course Completitation Rates</h1>
                           </div>
                           <div className='flex gap-2 items-center'>
                             <span className='rounded-full p-[5px] text-[18px]  bg-[#3fd0d4]'><MdDone size={14} color='white'/></span>
-                            <h1 className='text-[#666666] font-medium deliver'>We are an award winning agency</h1>
+                            <h1 className='text-[#666666] font-normal text-[18px] deliver'>We are an award winning agency</h1>
                           </div>
                           <div className='flex gap-2 items-center'>
                             <span className='rounded-full p-[5px] text-[18px]  bg-[#3fd0d4]'><MdDone size={14} color='white'/></span>
-                            <h1 className='text-[#666666] font-medium deliver'>Trusted by more than 80,000 customers</h1>
+                            <h1 className='text-[#666666] font-normal text-[18px] deliver'>Trusted by more than 80,000 customers</h1>
                           </div>
                         </div>
-                        <div className='mt-12 flex py-[11px] px-[25px] bs:py-[15px] bs:px-[35px] border-none leading-[1.6em] rounded-md justify-center items-center gap-[10px] shadow-none hover:bg-[#102039] bg-[#3fd0d4]'>
+                        <div className='mt-12 flex py-[11px] px-[25px] bs:py-[15px] bs:px-[35px] border-none leading-[1.6em] rounded-md justify-center items-center gap-[10px] shadow-none hover:bg-[#102039] bg-[#3fd0d4] w-[31%] bw:w-[33%] md:w-[25%] bs:w-[42%] bm:w-[35%] 2xl:w-[30%]'>
                           <div className=''>
                             <button className='text-[18px] text-white font-medium'>Read More</button>
                           </div>

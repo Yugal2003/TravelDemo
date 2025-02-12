@@ -90,7 +90,7 @@ import { motion } from 'framer-motion'
 
 const HeroSection = () => {
   return (
-    <div className='pt-[410px] bw:pt-[460px] md:pt-[368px] bs:pt-[465px] 2xl:pt-[490px] pb-[360px] 2xl:pb-[395px] px-0 relative overflow-hidden bg-fixed flex items-center justify-center z-0 full-landing' style={{WebkitBoxAlign:"center",WebkitBoxPack:"center",backgroundImage:`url(${backImg})`}}>
+    <div className='pt-[490px] pb-[395px] px-0 relative overflow-hidden bg-fixed flex items-center justify-center z-0 full-landing' style={{WebkitBoxAlign:"center",WebkitBoxPack:"center",backgroundImage:`url(${backImg})`}}>
         <div className='relative z-[2] max-w-full  bw:max-w-[540px] md:max-w-[720px] bs:max-w-[960px] bm:max-w-[1140px] 2xl:max-w-[1320px] w-full px-[12px]'>
             <div className='text-center'>
                 <h3 className='tracking-[4px] bs:tracking-[7.5px] mb-[12px] text-white text-[22px] bs:text-[24px] leading-[1.44em] uppercase text_lets'>Lets Travel The World With Us</h3>
@@ -140,8 +140,10 @@ const HeroSection = () => {
             </div>
         </div>
         <div className='hidden bs:block h-[530px] 2xl:h-[580px] w-[380px] 2xl:w-[501px] opacity-[0.55] top-0 left-[343px] bg-[#3fd0d4] absolute'></div>
-        <div className='opacity-[0.45] bottom-[-210px] right-[-140px] border border-black h-[505px] rounded-[50%] bg-[#3fd0d4] absolute'></div>
-        <div className='opacity-[0.7] right-[-10px] z-[1] bottom-[-370px] h-[510px] rounded-[50%] bg-[#3fd0d4] absolute'></div>
+        {/* <div className='opacity-[0.45] bottom-[-210px] right-[-140px] border border-black h-[505px] rounded-[50%] bg-[#3fd0d4] absolute'></div>
+        <div className='opacity-[0.7] right-[-10px] z-[1] bottom-[-370px] h-[510px] rounded-[50%] bg-[#3fd0d4] absolute'></div> */}
+        <div className='opacity-[0.45] bottom-[-210px] right-[-140px] w-[498px] h-[510px] rounded-[50%] bg-[#3fd0d4] absolute'></div>
+        <div className='opacity-[0.7] right-[-10px] z-[1] bottom-[-370px] w-[498px] h-[510px] rounded-[50%] bg-[#3fd0d4] absolute'></div>
     </div>
   )
 }

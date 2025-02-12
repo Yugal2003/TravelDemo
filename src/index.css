@@ -37,6 +37,83 @@ body{
 .lorem{
     font-family: sans-serif;
 }
+
+
+/* left to right move */
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%); /* Start from outside the left */
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-100%); /* Move back outside to the left */
+      opacity: 0;
+    }
+  }
+
+  .popup-container {
+    transform: translateX(-100%); /* Initially hidden on the left */
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  }
+  
+  .popup-container.open {
+    animation: slideIn 0.5s ease-in-out forwards;
+  }
+  
+  .popup-container.close {
+    animation: slideOut 0.5s ease-in-out forwards;
+  }
+
+  /* top to bottom move */
+  @keyframes slideUp {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.popup-container-2 {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.popup-container-2.up {
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+
+.popup-container-2.down {
+  animation: slideDown 0.5s ease-in-out forwards;
+}
+
+  
   
 .custom-clip-path{
     clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 18% 50%, 0% 0%);
@@ -205,7 +282,18 @@ body{
     text-rendering: auto;
     color: white;
     font-size: 20px;
-    
+}
+
+.guide-section-before{
+    content: "";
+    position: absolute;
+    height: 93.5%;
+    width: 60vw;
+    right: -20px;
+    bottom: 0;
+    background-color: #3fd0d4;
+    opacity: 0.5;
+    border-radius: 0 320px 320px 0;
 }
 
 

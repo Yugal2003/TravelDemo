@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div className='w-full flex mx-auto'>
         <div className='w-full z-50 fixed'>
-            <div className='border-b border-sky-100 w-full flex justify-between items-center'>
+            <div className='border-b border-[#4792d3] w-full flex justify-between items-center'>
 
                 {/* 1200 up */}
                 <div className='hidden bm:flex w-[100%] justify-between mx-auto items-center h-[100px] px-[15px]'>
@@ -149,7 +149,7 @@ const Header = () => {
                     </div>
 
                     <div className='flex items-center'>
-                          <div className='relative px-[15px] xl:px-[33px] border-x border-sky-100 h-[100px] items-center flex'>
+                          <div className='relative px-[15px] xl:px-[33px] border-x border-[#4792d3] h-[100px] items-center flex'>
                               <FaSearch onClick={()=> setOpenSearchPopup(true)} className='text-white cursor-pointer hover:text-sky-400' size={25}/>
                           </div>
                           <div className='px-[15px] xl:px-[33px]'>
@@ -232,7 +232,9 @@ const Header = () => {
                             openBlueSection && 
                             (
                             <>
-                              <div className='absolute z-[70] top-0 left-0 w-screen h-screen flex flex-col items-center justify-start bg-[#102039]' >
+                              <div className={`absolute z-[70] top-0 left-0 w-screen h-screen flex flex-col items-center justify-start bg-[#102039] transform transition-transform duration-500 ease-in-out ${
+                                                openBlueSection ? "open" : "close" 
+                                            } popup-container`}>
                                   <div className='px-[15px] hidden bw:flex bm:hidden w-[100%] justify-between mx-auto items-center h-[80px]'>
 
                                   <div className=''>
@@ -246,7 +248,7 @@ const Header = () => {
 
                                   <div className='flex items-center'>
                                         <div className='pl-[15px] text-white'>
-                                            <GrMenu size={32}/>
+                                            <GrMenu onClick={()=> setOpenBlueSection(false)} size={32}/>
                                         </div>
                                   </div>
 

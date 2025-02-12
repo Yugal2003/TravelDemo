@@ -42,7 +42,7 @@ const VideoSection = () => {
             {/* Modal - YouTube Video Overlay */}
             {isOpen && (
                 <div className="fixed inset-0 bg-black/80 flex justify-center items-center z-50">
-                <div className="relative w-[100%] h-[100%] 2xl:w-[92%] mx-[1rem] 2xl:mx-0 mt-[2rem] aspect-video">
+                <div className="relative w-[100%] h-[100%] 2xl:w-[92%] 3xl:w-[54%] 3xl:h-[76%] mx-[1rem] 2xl:mx-0 mt-[2rem] 3xl:mt-[1.5rem] aspect-video">
                     {/* Close Button */}
                     <button 
                     onClick={() => setIsOpen(false)}
