@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaSearch } from "react-icons/fa";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { GrMenu } from "react-icons/gr";
@@ -13,10 +13,20 @@ const Header = () => {
   const [destinationOpen,setDestinationOpen] = useState(false);
   const [tours,setTours] = useState(false);
   const [blog,setBlog] = useState(false);
+  
+  useEffect(()=> {
+    document.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+          document.querySelector('.main-nav').classList.add('scroll-nav');
+      } else {
+          document.querySelector('.main-nav').classList.remove('scroll-nav');
+      }
+    });
+  },[])
 
   return (
-    <div className='w-full flex mx-auto'>
-        <div className='w-full z-50 fixed'>
+    <div className='w-full flex mx-auto relative'>
+        <div className='w-full z-50 absolute'>
             <div className='border-b border-[#4792d3] w-full flex justify-between items-center'>
 
                 {/* 1200 up */}
@@ -31,11 +41,11 @@ const Header = () => {
                           </p>
                     </div>
 
-                    <div className='w-full' style={{maxWidth:"calc(100% - 650px)"}}>
+                    <div className='w-full xl:max-w-[calc(100%-650px)]'>
                         <ul className='flex text-white
-                         flex-row text-[18px] justify-center items-center mx-auto font-serif cursor-pointer gap-10'>
+                         flex-row text-[18px] justify-center items-center mx-auto font-serif cursor-pointer gap-[42px]'>
                               <li className='relative group'>
-                                  <button className='relative flex flex-row items-center gap-1'>Home <FaArrowDownLong size={14}/>
+                                  <button className='relative flex flex-row items-center gap-1 travel_top_text font-medium'>Home <FaArrowDownLong size={12}/>
                                                     <span 
                                                         className="absolute right-[30%] -bottom-1 w-0 h-[2px]  
                                                         transition-all duration-500 group-hover:w-[30%] group-hover:right-8 
@@ -62,9 +72,9 @@ const Header = () => {
                                                     </div>
                                   </button>
                               </li>
-                              <li className=''>About Us</li>
+                              <li className='travel_top_text font-medium'>About Us</li>
                               <li className='relative group'> 
-                                <button className='relative flex flex-row items-center gap-1'>Destination <FaArrowDownLong size={14}/>
+                                <button className='relative flex flex-row items-center gap-1 travel_top_text font-medium'>Destination <FaArrowDownLong size={12}/>
                                                     <span 
                                                         className="absolute right-[30%] -bottom-1 w-0 h-[2px]  
                                                         transition-all duration-500 group-hover:w-[30%] group-hover:right-8 
@@ -91,7 +101,7 @@ const Header = () => {
                                 </button>
                               </li>
                               <li className='relative group'> 
-                                <button className='relative flex flex-row items-center gap-1'>Tours <FaArrowDownLong size={14}/>
+                                <button className='relative flex flex-row items-center gap-1 travel_top_text font-medium'>Tours <FaArrowDownLong size={12}/>
                                                     <span 
                                                         className="absolute right-[30%] -bottom-1 w-0 h-[2px]  
                                                         transition-all duration-500 group-hover:w-[30%] group-hover:right-8 
@@ -118,7 +128,7 @@ const Header = () => {
                                 </button>
                               </li>
                               <li className='relative group'>
-                                <button className='relative flex flex-row items-center gap-1'>Blog <FaArrowDownLong size={14}/>
+                                <button className='relative flex flex-row items-center gap-1 travel_top_text font-medium'>Blog <FaArrowDownLong size={12}/>
                                                     <span 
                                                         className="absolute right-[30%] -bottom-1 w-0 h-[2px]  
                                                         transition-all duration-500 group-hover:w-[30%] group-hover:right-8 
@@ -144,16 +154,16 @@ const Header = () => {
                                                     </div>
                                                   </button>
                               </li>
-                              <li className=''>Contacts</li>
+                              <li className='travel_top_text font-medium'>Contacts</li>
                         </ul>
                     </div>
 
                     <div className='flex items-center'>
                           <div className='relative px-[15px] xl:px-[33px] border-x border-[#4792d3] h-[100px] items-center flex'>
-                              <FaSearch onClick={()=> setOpenSearchPopup(true)} className='text-white cursor-pointer hover:text-sky-400' size={25}/>
+                              <FaSearch onClick={()=> setOpenSearchPopup(true)} className='text-white cursor-pointer hover:text-sky-400' size={26}/>
                           </div>
-                          <div className='px-[15px] xl:px-[33px]'>
-                              <h1 className='text-white text-[20px] font-bold'>+8 (123) 985 789</h1>
+                          <div className='px-[15px] xl:pl-[33px]'>
+                              <h1 className='text-white text-[20px] font-medium deliver'>+8 (123) 985 789</h1>
                           </div>
                           {
                             openSearchPopup && 

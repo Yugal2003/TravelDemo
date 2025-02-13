@@ -90,10 +90,10 @@ import { motion } from 'framer-motion'
 
 const HeroSection = () => {
   return (
-    <div className='pt-[490px] pb-[395px] px-0 relative overflow-hidden bg-fixed flex items-center justify-center z-0 full-landing' style={{WebkitBoxAlign:"center",WebkitBoxPack:"center",backgroundImage:`url(${backImg})`}}>
+    <div className='pt-[490px] pb-[395px] 3xl:pt-[550px] 3xl:pb-[450px] px-0 relative overflow-hidden bg-fixed flex items-center justify-center z-0 full-landing bg-cover' style={{WebkitBoxAlign:"center",WebkitBoxPack:"center",backgroundImage:`url(${backImg})`}}>
         <div className='relative z-[2] max-w-full  bw:max-w-[540px] md:max-w-[720px] bs:max-w-[960px] bm:max-w-[1140px] 2xl:max-w-[1320px] w-full px-[12px]'>
             <div className='text-center'>
-                <h3 className='tracking-[4px] bs:tracking-[7.5px] mb-[12px] text-white text-[22px] bs:text-[24px] leading-[1.44em] uppercase text_lets'>Lets Travel The World With Us</h3>
+                <h3 className='tracking-[4px] bs:tracking-[7.5px] mb-[12px] text-white text-[22px] bs:text-[25px] leading-[1.44em] uppercase text_lets'>Lets Travel The World With Us</h3>
                 <motion.div 
                             initial={{ y: "20%", opacity: 0 }} // Start off-screen to the right
                             whileInView={{ y: 0, opacity: 1 }}  // Move to original position
@@ -132,14 +132,14 @@ const HeroSection = () => {
                     </div>
                     {/* <input type='text' placeholder=''/> */}
                     <div className='flex-1 flex items-center h-[50px] md:h-auto '>
-                        <button className='border-none w-[100%] bg-[#3fd0d4] text-[#102039] h-[50px] bs:h-[75px] gap-[10px] bs:gap-[15px] flex items-center justify-center' style={{fontWeight:"700",borderRadius:"0px 5px 5px 0px",transition: "all 0.3s ease",cursor:"pointer"}}>
+                        <button className='border-none w-[100%] bg-[#3fd0d4] hover:bg-[#102039] hover:text-white text-[#102039] h-[50px] bs:h-[75px] gap-[10px] bs:gap-[15px] flex items-center justify-center' style={{fontWeight:"700",borderRadius:"0px 5px 5px 0px",transition: "all 0.3s ease",cursor:"pointer"}}>
                             <FaSearch size={20}/>Find Now
                         </button>
                     </div>
                 </form>
             </div>
         </div>
-        <div className='hidden bs:block h-[530px] 2xl:h-[580px] w-[380px] 2xl:w-[501px] opacity-[0.55] top-0 left-[343px] bg-[#3fd0d4] absolute'></div>
+        <div className='hidden bs:block h-[530px] 2xl:h-[580px] w-[380px] 2xl:w-[501px] 3xl:h-[620px] opacity-[0.55] top-0 left-[343px] bg-[#3fd0d4] absolute'></div>
         {/* <div className='opacity-[0.45] bottom-[-210px] right-[-140px] border border-black h-[505px] rounded-[50%] bg-[#3fd0d4] absolute'></div>
         <div className='opacity-[0.7] right-[-10px] z-[1] bottom-[-370px] h-[510px] rounded-[50%] bg-[#3fd0d4] absolute'></div> */}
         <div className='opacity-[0.45] bottom-[-210px] right-[-140px] w-[498px] h-[510px] rounded-[50%] bg-[#3fd0d4] absolute'></div>

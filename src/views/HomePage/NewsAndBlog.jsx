@@ -19,7 +19,7 @@ const NewsAndBlog = () => {
                 <div className='gap-y-[24px] flex flex-wrap flex-shrink-0 max-w-[100%] w-full' style={{flex:"0 0 auto"}}>
                     {/* first */}
                     <div className='w-[100%] bs:w-[50%] max-w-[100%] px-[12px]'>
-                        <div style={{boxShadow: "0px 0px 45px 0px rgba(0, 0, 0, 0.1)"}} className='sm:pr-[20px] bm:pr-[30px] gap-[20px] bm:gap-[30px] flex flex-col sm:flex-row bg-white min-h-[350px] bm:min-h-[400px]'>
+                        <div style={{boxShadow: "0px 0px 45px 0px rgba(0, 0, 0, 0.1)"}} className='sm:pr-[20px] bm:pr-[30px] 3xl:pr-[60px] gap-[20px] bm:gap-[30px] flex flex-col sm:flex-row bg-white min-h-[350px] bm:min-h-[400px]'>
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" className='block flex-none w-[100%] sm:w-[42%] bm:w-[48%] shadow-none relative overflow-hidden' style={{textDecoration:"none",transition: "all 0.3s ease",WebkitBoxFlex:"0"}}>
                                 <img src={img1} className='block h-[100%] object-cover border-none shadow-none max-w-[100%] hover:scale-105' style={{transition: "all 1s ease",verticalAlign:"middle"}} alt='img'/>
                                 <div className='flex items-center gap-0 right-0 bottom-0 absolute'>
@@ -84,7 +84,7 @@ const NewsAndBlog = () => {
 
                     {/* second */}
                     <div className='w-[100%] bs:w-[50%] max-w-[100%] px-[12px]'>
-                        <div style={{boxShadow: "0px 0px 45px 0px rgba(0, 0, 0, 0.1)"}} className='sm:pr-[20px] bm:pr-[30px] gap-[20px] bm:gap-[30px] flex flex-col sm:flex-row bg-white min-h-[350px] bm:min-h-[400px]'>
+                        <div style={{boxShadow: "0px 0px 45px 0px rgba(0, 0, 0, 0.1)"}} className='sm:pr-[20px] bm:pr-[30px] 3xl:pr-[60px] gap-[20px] bm:gap-[30px] flex flex-col sm:flex-row bg-white min-h-[350px] bm:min-h-[400px]'>
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" className='block flex-none w-[100%] sm:w-[42%] bm:w-[48%] shadow-none relative overflow-hidden' style={{textDecoration:"none",transition: "all 0.3s ease",WebkitBoxFlex:"0"}}>
                                 <img src={img2} className='block h-[100%] object-cover border-none shadow-none max-w-[100%] hover:scale-105' style={{transition: "all 1s ease",verticalAlign:"middle"}} alt='img'/>
                                 <div className='flex items-center gap-0 right-0 bottom-0 absolute'>

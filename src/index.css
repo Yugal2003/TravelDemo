@@ -138,7 +138,6 @@ body{
     overflow-x: hidden;
 }
 
-
 .herosection_container{
     min-height: 790px;
     position: relative;
@@ -309,6 +308,7 @@ body{
 }
 
 /* .bg-img-1{
+
     background-image: url('../src/assets/PopularTours/package_img_1.jpeg');
     background-size: cover;
     background-position: center;
@@ -328,3 +328,9 @@ body{
     background-size: cover;
     background-position: center;
 } */
+
+
+
+.scroll-nav {
+  transform: translateY(-100%);
+}
