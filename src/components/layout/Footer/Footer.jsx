@@ -3,7 +3,7 @@ import footer_img from '../../../assets/Footer/footer_bg.jpeg'
 import letter from '../../../assets/Footer/letter.png'
 const Footer = () => {
   return (
-    <div className='mb-[148px] 3xl:mb-0'>
+    <div className='mb-[220px] 2xl:mb-[75px] xxl:mb-[138px] 3xl:mb-0'>
         <div> {/* max-w */}
           <div style={{backgroundImage:`url(${footer_img})`}} className='relative w-full bg-[#102039] text-white bg-cover bg-no-repeat bg-center mt-[200px] bs:mt-0'>
             {/* first div */}

@@ -73,9 +73,9 @@ const About = () => {
                             <h1 className='text-[#666666] font-normal text-[18px] deliver'>Trusted by more than 80,000 customers</h1>
                           </div>
                         </div>
-                        <div className='mt-12 flex py-[11px] px-[25px] bs:py-[15px] bs:px-[35px] border-none leading-[1.6em] rounded-md justify-center items-center gap-[10px] shadow-none hover:bg-[#102039] bg-[#3fd0d4] w-[31%] bw:w-[33%] md:w-[25%] bs:w-[42%] bm:w-[35%] 2xl:w-[30%]'>
+                        <div className='mt-12 flex py-[8px] px-[4px] sm:py-[11px] sm:px-[25px] bs:py-[15px] bs:px-[35px] border-none leading-[1.6em] rounded-md justify-center items-center gap-[5px] sm:gap-[10px] shadow-none hover:bg-[#102039] bg-[#3fd0d4] w-[30%] sm:w-[35%] bw:w-[33%] md:w-[25%] bs:w-[42%] bm:w-[35%] 2xl:w-[30%]'>
                           <div className=''>
-                            <button className='text-[18px] text-white font-medium'>Read More</button>
+                            <button className='text-[12px] sm:text-[18px] text-white font-medium'>Read More</button>
                           </div>
                           <div>
                             <BsArrowRight color='white' size={18}/>
