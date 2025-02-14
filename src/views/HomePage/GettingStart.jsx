@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import img1 from '../../assets/GettingStarted/working_process_1.png';
 import img2 from '../../assets/GettingStarted/working_process_2.png';
 import img3 from '../../assets/GettingStarted/working_process_3.jpeg';
-import arrow from '../../assets/GettingStarted/arrow.png';
 
 const ExperienceSection = () => {
   return (
