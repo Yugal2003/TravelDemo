@@ -78,7 +78,7 @@ const PopularTours = () => {
                   
                 </div>
 
-              <div className='h-[80px] bs:h-[135px] w-full'></div>
+                <div className='h-[80px] bs:h-[135px] w-full'></div>
 
             </div>
         </div>

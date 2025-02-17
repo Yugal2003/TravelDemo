@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .bg-imgs{
+  background-image: url('../src/assets/DiscountSection/banner_bg_2.jpeg');
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
+} */
 body{
-    overflow-y:  hidden;
+    /* overflow-y:  hidden; */
 }
 .main_head{
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
@@ -18,6 +26,9 @@ body{
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
     /* background-image: url('../src//assets/HeroSection/hero_bg.jpeg'); */
+}
+.drag:hover{
+  cursor: url('../src/assets/CustomerFeedback/drag.png');
 }
 .bg-image{
     background-image: url('../src/assets/CTA/feature_bg.jpeg');
@@ -135,7 +146,7 @@ body{
     height: 100vh;
     /* background: url('../src/assets/HeroSection/hero_bg.jpeg') center; */
     /* background-size: cover; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .herosection_container{
@@ -245,6 +256,11 @@ body{
     top: -5px;
     border-radius: 2px 0 0 0;
 }
+.cutomer-feed{
+  content: '';
+  display: table;
+  cursor: url('../src/assets/CustomerFeedback/drag.png');
+}
 .svg-after::after{
     content: "";
     width: 100%;
@@ -260,7 +276,88 @@ body{
     box-sizing: border-box;
     color: white;
 }
+/* Initial state: Text is smaller */
+.group h2, 
+.group p {
+    font-size: 8px; /* Start small */
+    transform: scale(0.8); /* Slightly small */
+    opacity: 0;
+    transition: font-size 0.3s ease-out, transform 0.3s ease-out, opacity 0.3s ease-in;
+}
 
+/* On hover, smoothly increase text size */
+.group:hover h2{
+    font-size: 24px; /* Grow to large */
+    transform: scale(1); /* Normal size */
+    opacity: 1;
+    transition: font-size 0.3s ease-out, transform 0.3s ease-out, opacity 0.3s ease-in;
+}
+.group:hover p{
+  font-size: 16px; /* Grow to large */
+  transform: scale(1); /* Normal size */
+  opacity: 1;
+  transition: font-size 0.3s ease-out, transform 0.3s ease-out, opacity 0.3s ease-in;
+}
+.person-11{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 32, 57, 0.6);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    opacity: 0;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.person-12{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #3fd0d4;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+/* Add hover effects */
+.bs\:w-\[33\.33\%\]:hover .person-11 {
+  opacity: 1;
+}
+
+.bs\:w-\[33\.33\%\]:hover img {
+  transform: scale(1.1);
+}
+
+/* Text animation */
+.transform {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bs\:w-\[33\.33\%\]:hover .transform {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Ensure proper image transition */
+.rounded-full {
+  overflow: hidden;
+}
+img {
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Adjust blue circle positioning */
+.person-12 {
+  z-index: -1;
+  transform: translateY(13px);
+}
 .footer-before{
     content: "";
     position: absolute;
@@ -295,7 +392,25 @@ body{
     border-radius: 0 320px 320px 0;
 }
 
+.hero-section-before-1{
+  content: "\f005\f005\f005\f005\f005";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  box-sizing: border-box;
+}
 
+.hero-section-before-2{
+  content: "\f005\f005\f005\f005\f005";
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    top: 0;
+    left: 0; 
+    font-weight: 900;
+    box-sizing: border-box;
+}
 
 .atag:hover {
     transform: rotate(40deg);

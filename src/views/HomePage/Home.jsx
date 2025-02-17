@@ -15,6 +15,7 @@ import NewsAndBlog from './NewsAndBlog'
 import HeightSection from './HeightSection'
 
 const Home = () => {
+  
   return (
     <div className='flex flex-col full-landing-image min-h-[886px]'>
         <Header/>
