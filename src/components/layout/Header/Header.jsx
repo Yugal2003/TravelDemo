@@ -77,9 +77,9 @@ const Header = () => {
                                                             <BiSolidUpArrow color='' size={12} className='ml-2 mb-[-4px]'/>
                                                               <div className="flex flex-col py-8 items-left px-4 rounded-md text-left bg-white w-[100%] absolute">
                                                                   <ul className="flex flex-col gap-4">
-                                                                      <li className="text-[#666666] text-base hover:text-sky-400">Home</li>
-                                                                      <NavLink to='/home-2'><li className="text-[#666666] text-base hover:text-sky-400">Home 2</li></NavLink>
-                                                                      <li className="text-[#666666] text-base hover:text-sky-400">Home 3</li>
+                                                                      <li className="text-[#666666] text-base hover:text-sky-400" style={{transition:"all 0.3s ease"}}>Home</li>
+                                                                      <NavLink to='/home-2'><li className="text-[#666666] text-base hover:text-sky-400" style={{transition:"all 0.3s ease"}}>Home 2</li></NavLink>
+                                                                      <li className="text-[#666666] text-base hover:text-sky-400" style={{transition:"all 0.3s ease"}}>Home 3</li>
                                                                   </ul>
                                                               </div>
                                                           </div>

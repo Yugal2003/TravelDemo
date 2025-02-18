@@ -14,6 +14,14 @@
 body{
     /* overflow-y:  hidden; */
 }
+/* Add these to your CSS file or style tag */
+.transition-transform {
+  transition: transform 0.4s ease-in-out;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
 .main_head{
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     position: fixed !important;
@@ -27,8 +35,8 @@ body{
     /* background-size: cover; */
     /* background-image: url('../src//assets/HeroSection/hero_bg.jpeg'); */
 }
-.drag:hover{
-  cursor: url('../src/assets/CustomerFeedback/drag.png');
+.drag:hover {
+  cursor: url('../public/asset/drag.png'), auto;
 }
 .bg-image{
     background-image: url('../src/assets/CTA/feature_bg.jpeg');
