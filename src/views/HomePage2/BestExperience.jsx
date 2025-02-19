@@ -17,23 +17,23 @@ const BestExperience = () => {
             {/* container */}
             <div className='w-full justify-center items-center mx-auto flex flex-col max-w-auto  bw:max-w-[540px] md:max-w-[720px] bs:max-w-[960px] bm:max-w-[1140px] 2xl:max-w-[1320px] px-[12px]'>
                 <div className='text-center'>
-                    <h3 className='mb-[5px] uppercase tracking-[5px] text-[#3fd0d4] font-normal text-[24px] leading-[1.333em] text_lets'>Why Choose Us</h3>
+                    <h3 className='mb-[5px] uppercase tracking-[3px] bs:tracking-[5px] text-[#3fd0d4] font-normal text-[20px] bs:text-[22px] 2xl:text-[24px] leading-[1.333em] text_lets'>Why Choose Us</h3>
                     <motion.div 
                             initial={{ y: "40%", opacity: 0 }} // Start off-screen to the right
                             whileInView={{ y: 0, opacity: 1 }}  // Move to original position
                             transition={{ duration: 0.7, ease: "easeOut" }} // Smooth animation
                             viewport={{ once: true }} // Ensures animation happens only once
                     >
-                        <h2 className='font-semibold text-[56px] leading-[1.327em] travel_top_text'>Get The Best Travel Experience</h2>
+                        <h2 className='font-semibold text-[38px] bs:text-[44px] 2xl:text-[56px] leading-[1.327em] travel_top_text'>Get The Best Travel Experience</h2>
                     </motion.div>
                 </div>
                 <div className='h-[40px] bs:h-[55px] w-full'></div>
-                <div className='flex w-[100%] justify-between items-center'>
+                <div className='flex flex-col bs:flex-row gap-[40px] bs:gap-0 w-[100%] justify-between items-center'>
                     {/* first */}
-                    <div className='w-[22%] flex-none'>
+                    <div className='w-[100%] bs:w-[22%] flex-none'>
                         <div className='gap-y-[45px] gap-x-0 flex flex-wrap'>
                             {/* first */}
-                            <div className='bs:w-[100%] flex-none max-w-[100%]' onMouseEnter={()=> setBgBlue(true)} onMouseLeave={()=> setBgBlue(false)}>
+                            <div className='w-[50%] bs:w-[100%] flex-none max-w-[100%] px-[12px]' onMouseEnter={()=> setBgBlue(true)} onMouseLeave={()=> setBgBlue(false)}>
                                 <div>
                                     <div className={`w-[70px] h-[70px] border-2 border-[#d9d9d9] rounded-full p-[10px] mb-[20px] flex items-center justify-center ${bgBlue === true ? "bg-[#3fd0d4]" : "bg-white"}`} style={{transition: "all 0.4s ease"}}>
                                         <p>
@@ -49,11 +49,11 @@ const BestExperience = () => {
                                             </svg>
                                         </p>
                                     </div>
-                                    <h2 className='mb-[12px] font-semibold text-[24px] leading-[1.333em] travel_top_text'>Set Travel Plan</h2>
+                                    <h2 className='mb-[12px] font-semibold text-[20px] bs:text-[22px] 2xl:text-[24px] leading-[1.333em] travel_top_text'>Set Travel Plan</h2>
                                     <p className='mb-0 deliver text-[#666666]'>Distinctively impact client-centered ideas via future-proof paradigms.</p>
                                 </div>
                             </div>
-                            <div className='bs:w-[100%] flex-none max-w-[100%]' onMouseEnter={()=> setBgBlue1(true)} onMouseLeave={()=> setBgBlue1(false)}>
+                            <div className='w-[50%] bs:w-[100%] flex-none max-w-[100%] px-[12px]' onMouseEnter={()=> setBgBlue1(true)} onMouseLeave={()=> setBgBlue1(false)}>
                                 <div>
                                     <div className={`w-[70px] h-[70px] border-2 border-[#d9d9d9] rounded-full p-[10px] mb-[20px] flex items-center justify-center  ${bgBlue1 === true ? "bg-[#3fd0d4]" : "bg-white"}`} style={{transition: "all 0.4s ease"}}>
                                         <p>
@@ -69,23 +69,23 @@ const BestExperience = () => {
                                             </svg>
                                         </p>
                                     </div>
-                                    <h2 className='mb-[12px] font-semibold text-[24px] leading-[1.333em] travel_top_text'>Luxary Hotel</h2>
+                                    <h2 className='mb-[12px] font-semibold text-[20px] bs:text-[22px] 2xl:text-[24px] leading-[1.333em] travel_top_text'>Luxary Hotel</h2>
                                     <p className='mb-0 deliver text-[#666666]'>Distinctively impact client-centered ideas via future-proof paradigms.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     {/* second */}
-                    <div className='flex-1 w-[22%]'>
+                    <div className='flex-1 w-[100%] bs:w-[22%]'>
                         <div className='flex justify-center items-center'>
                             <img src={girlImg} alt='girl_img' className='max-w-[100%] h-auto shadow-none border-none' style={{verticalAlign:"middle"}}/>
                         </div>
                     </div>
                     {/* third */}
-                    <div className='w-[22%] flex-none'>
+                    <div className='w-[100%] bs:w-[22%] flex-none'>
                         <div className='gap-y-[45px] gap-x-0 flex flex-wrap'>
                             {/* first */}
-                            <div className='bs:w-[100%] flex-none max-w-[100%]' onMouseEnter={()=> setBgBlue2(true)} onMouseLeave={()=> setBgBlue2(false)}>
+                            <div className='w-[50%] bs:w-[100%] flex-none max-w-[100%] px-[12px]' onMouseEnter={()=> setBgBlue2(true)} onMouseLeave={()=> setBgBlue2(false)}>
                                 <div>
                                     <div className={`w-[70px] h-[70px] border-2 border-[#d9d9d9] rounded-full p-[10px] mb-[20px] flex items-center justify-center ${bgBlue2 === true ? "bg-[#3fd0d4]" : "bg-white"}`} style={{transition: "all 0.4s ease"}}>
                                         <p>
@@ -101,11 +101,11 @@ const BestExperience = () => {
                                             </svg>
                                         </p>
                                     </div>
-                                    <h2 className='mb-[12px] font-semibold text-[24px] leading-[1.333em] travel_top_text'>Explore Around</h2>
+                                    <h2 className='mb-[12px] font-semibold text-[20px] bs:text-[22px] 2xl:text-[24px] leading-[1.333em] travel_top_text'>Explore Around</h2>
                                     <p className='mb-0 deliver text-[#666666]'>Distinctively impact client-centered ideas via future-proof paradigms.</p>
                                 </div>
                             </div>
-                            <div className='bs:w-[100%] flex-none max-w-[100%]' onMouseEnter={()=> setBgBlue3(true)} onMouseLeave={()=> setBgBlue3(false)}>
+                            <div className='w-[50%] bs:w-[100%] flex-none max-w-[100%] px-[12px]' onMouseEnter={()=> setBgBlue3(true)} onMouseLeave={()=> setBgBlue3(false)}>
                                 <div>
                                     <div className={`w-[70px] h-[70px] border-2 border-[#d9d9d9] rounded-full p-[10px] mb-[20px] flex items-center justify-center ${bgBlue3 === true ? "bg-[#3fd0d4]" : "bg-white"}`} style={{transition: "all 0.4s ease"}}>
                                         <p>
@@ -121,7 +121,7 @@ const BestExperience = () => {
                                             </svg>
                                         </p>
                                     </div>
-                                    <h2 className='mb-[12px] font-semibold text-[24px] leading-[1.333em] travel_top_text'>Support 24/7</h2>
+                                    <h2 className='mb-[12px] font-semibold text-[20px] bs:text-[22px] 2xl:text-[24px] leading-[1.333em] travel_top_text'>Support 24/7</h2>
                                     <p className='mb-0 deliver text-[#666666]'>Distinctively impact client-centered ideas via future-proof paradigms.</p>
                                 </div>
                             </div>
